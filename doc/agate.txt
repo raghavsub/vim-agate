@@ -9,5 +9,5 @@ This is plugin a simple, unconfigurable frontend for ag. This plugin provides an
 
 :Ag {args}                                                                 *:Ag*
 
-    Runs ag --vimgrep {args}, create a quickfix list of the results, and jump
+    Runs ag --vimgrep {args}, creates a quickfix list of the results, and jumps
     to the first result.
