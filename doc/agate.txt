@@ -1,0 +1,13 @@
+*agate.txt*   A vim search plugin with flecks of silver
+
+================================================================================
+
+INTRODUCTION                                                             *agate*
+
+This is plugin a simple, unconfigurable frontend for ag. This plugin provides an
+:Ag command similar to the builtin :grep.
+
+:Ag {args}                                                                 *:Ag*
+
+    Runs ag --vimgrep {args}, create a quickfix list of the results, and jump
+    to the first result.
