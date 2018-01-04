@@ -7,7 +7,7 @@ INTRODUCTION                                                             *agate*
 This is plugin a simple, unconfigurable frontend for ag. This plugin provides an
 :Ag command similar to the builtin :grep.
 
-:Ag[!] [arguments]                                                         *:Ag*
+:Ag[!] arguments                                                           *:Ag*
 
     Runs ag --vimgrep arguments and creates a quickfix list of the results. If
     [!] is not given, jumps to the first result.
