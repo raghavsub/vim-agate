@@ -13,6 +13,6 @@ Use [minpac](https://github.com/k-takata/minpac), any other package/plugin manag
 
 ## Usage
 
-    :Ag[!] arguments
+    :Ag arguments
 
-Runs `ag --vimgrep arguments` and creates a quickfix list of the results. If `!` is not given, jumps to the first result.
+Run `ag --vimgrep arguments`, populate the quickfix list, and jump to the first result.

@@ -1,1 +1,1 @@
-command! -bang -nargs=+ Ag call agate#Ag(<bang>0, <q-args>)
+command! -nargs=+ Ag call agate#Ag(<q-args>)
