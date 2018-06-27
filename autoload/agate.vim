@@ -1,7 +1,14 @@
-function agate#Ag(args)
-    if !executable('ag')
-        echoerr "ag not found; doing nothing!"
-        return
-    endif
-    cexpr system("ag --vimgrep " . a:args)
+function agate#Ag(cmd, args)
+    let grepprg = &grepprg
+    let grepformat = &grepformat
+
+    let &grepprg = "ag --vimgrep $*"
+    let &grepformat = "%f:%l:%c:%m"
+
+    silent execute a:cmd a:args
+
+    let &grepprg = grepprg
+    let &grepformat = grepformat
+
+    redraw!
 endfunction
